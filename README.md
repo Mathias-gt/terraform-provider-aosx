@@ -28,8 +28,8 @@ For Terraform 0.12.x and earlier, you can put the provider binary in the same di
 
 Example for Linux:
 ```bash
-mkdir -p ~/.terraform.d/plugins/ale/aosx/restconf/1.0.0/linux_amd64
-mv -f terraform-provider-aosx ~/.terraform.d/plugins/ale/aosx/restconf/1.0.0/linux_amd64
+mkdir -p ~/.terraform.d/plugins/spacewalkers.com/ale/aosx/1.0.0/linux_amd64
+mv -f terraform-provider-aosx ~/.terraform.d/plugins/spacewalkers.com/ale/aosx/1.0.0/linux_amd64
 ```
 
 ## Example of main.tf file
@@ -38,7 +38,7 @@ mv -f terraform-provider-aosx ~/.terraform.d/plugins/ale/aosx/restconf/1.0.0/lin
 terraform {
   required_providers {
     aosx = {
-      source  = "ale/aosx/restconf"
+      source  = "spacewalkers.com/ale/aosx/1.0.0"
     }
   }
 }
