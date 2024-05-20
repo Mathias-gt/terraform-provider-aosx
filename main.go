@@ -18,7 +18,7 @@ func main() {
 	flag.BoolVar(&debugMode, "debug", false, "set to true to run the provider with support for debuggers like delve")
 	flag.Parse()
 
-	opts := &plugin.ServeOpts{ProviderFunc: restconf.Provider}
+	opts := &plugin.ServeOpts{ProviderFunc: aos.Provider}
 
 	if debugMode {
 		err := plugin.Debug(context.Background(), "github.com/Mathias-gt/terraform-provider-aosx/restconf", opts)
