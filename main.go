@@ -6,7 +6,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
-	"github.com/Mathias-gt/terraform-provider-aosx"
+	"github.com/Mathias-gt/terraform-provider-aosx/restconf"
 )
 
 // Generate the Terraform provider documentation using `tfplugindocs`:
@@ -21,7 +21,7 @@ func main() {
 	opts := &plugin.ServeOpts{ProviderFunc: restconf.Provider}
 
 	if debugMode {
-		err := plugin.Debug(context.Background(), "github.com/Mathias-gt/terraform-provider-aosx", opts)
+		err := plugin.Debug(context.Background(), "github.com/Mathias-gt/terraform-provider-aosx/restconf", opts)
 		if err != nil {
 			log.Fatal(err.Error())
 		}
