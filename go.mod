@@ -1,4 +1,4 @@
-module github.com/tbd
+module https://github.com/Mathias-gt/terraform-provider-aosx
 
 go 1.19
 

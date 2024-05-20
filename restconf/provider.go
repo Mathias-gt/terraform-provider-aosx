@@ -10,7 +10,7 @@ import (
 func Provider() *schema.Provider {
 	return &schema.Provider{
 		ResourcesMap: map[string]*schema.Resource{
-			"restconf_config_block": resourceRestconf(),
+			"aosx_restconf": resourceRestconf(),
 		},
 		Schema: map[string]*schema.Schema{
 			"username": {
