@@ -38,7 +38,7 @@ mv -f terraform-provider-aosx ~/.terraform.d/plugins/spacewalkers.com/ale/aosx/1
 terraform {
   required_providers {
     aosx = {
-      source  = "spacewalkers.com/ale/aosx/1.0.0"
+      source  = "spacewalkers.com/ale/aosx"
     }
   }
 }

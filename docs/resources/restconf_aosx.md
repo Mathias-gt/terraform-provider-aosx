@@ -21,7 +21,7 @@ Here is an example of how to use the RESTCONF provider in your Terraform configu
 terraform {
   required_providers {
     aosx = {
-      source  = "ale/aosx"
+      source  = "spacewalkers.com/ale/aosx"
     }
   }
 }
